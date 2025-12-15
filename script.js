@@ -4,7 +4,7 @@ var Snake = (function () {
   var intervalID;
   var tileCount = 30;
   var gridSize = 400/tileCount;
-  const INITIAL_PLAYER = { x: Math.floor(tileCount / 3), y: Math.floor(tileCount / 3) };
+  const INITIAL_PLAYER = { x: Math.floor(tileCount / 2), y: Math.floor(tileCount / 3) };
   
   var velocity = { x:0, y:0 };
   var player = { x: INITIAL_PLAYER.x, y: INITIAL_PLAYER.y };
@@ -264,7 +264,7 @@ var Snake = (function () {
   };
 })();
 
-Snake.start(50);
+Snake.start(13);
 Snake.setup.keyboard(true);
 Snake.setup.fixedTail(false);
 ;(function(){
