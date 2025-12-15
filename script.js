@@ -14,8 +14,8 @@ var Snake = (function () {
   var trail = [];
   var tail = INITIAL_TAIL;
   var reward = 0;
-  var points = 9999;
-  var pointsMax = 9999;
+  var points = 0;
+  var pointsMax = 0;
   var ActionEnum = { 'none':0, 'up':1, down:2, 'left':3, 'right':4 };
   Object.freeze(ActionEnum);
   var lastAction = ActionEnum.none;
