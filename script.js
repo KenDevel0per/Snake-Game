@@ -264,7 +264,7 @@ var Snake = (function () {
   };
 })();
 
-Snake.start(13);
+Snake.start(20);
 Snake.setup.keyboard(true);
 Snake.setup.fixedTail(false);
 ;(function(){
