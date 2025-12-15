@@ -4,7 +4,7 @@ var Snake = (function () {
   var intervalID;
   var tileCount = 30;
   var gridSize = 400/tileCount;
-  const INITIAL_PLAYER = { x: Math.floor(tileCount / 2), y: Math.floor(tileCount / 3) };
+  const INITIAL_PLAYER = { x: Math.floor(tileCount / 2), y: Math.floor(tileCount / 2) };
   
   var velocity = { x:0, y:0 };
   var player = { x: INITIAL_PLAYER.x, y: INITIAL_PLAYER.y };
@@ -14,8 +14,8 @@ var Snake = (function () {
   var trail = [];
   var tail = INITIAL_TAIL;
   var reward = 0;
-  var points = 0;
-  var pointsMax = 0;
+  var points = 9999;
+  var pointsMax = 9999;
   var ActionEnum = { 'none':0, 'up':1, down:2, 'left':3, 'right':4 };
   Object.freeze(ActionEnum);
   var lastAction = ActionEnum.none;
